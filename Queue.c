@@ -22,7 +22,7 @@ int isEmpty(struct Queue* ptr){
 
 void display(struct Queue* ptr){
     int i = ptr->front++;
-    while(ptr->front != ptr->rear + 1){
+    while(i != ptr->rear + 1){
         printf("The value is: %d\n", ptr->arr[i]);
         i++;
     }
